@@ -1,0 +1,154 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 20px;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    position: relative;
+}
+
+.memory-indicator {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #f5a623;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+    min-height: 30px;
+}
+
+.current-operand {
+    color: white;
+    font-size: 2.5rem;
+    min-height: 50px;
+}
+
+.memory-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+    grid-column: span 2;
+    background-color: #f5a623;
+    color: white;
+}
+
+.span-two:hover {
+    background-color: #e69b1d;
+}
+
+.operation {
+    background-color: #f1f1f1;
+}
+
+.advanced {
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+.advanced:hover {
+    background-color: #dee2e6;
+}
+
+.memory {
+    background-color: #6c757d;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.memory:hover {
+    background-color: #5a6268;
+}
+
+.number, #decimal {
+    background-color: #ffffff;
+}
+
+#equals {
+    background-color: #4caf50;
+    color: white;
+}
+
+#equals:hover {
+    background-color: #429a45;
+}
+
+#clear {
+    background-color: #f44336;
+    color: white;
+}
+
+#clear:hover {
+    background-color: #e53935;
+}
+
+#delete {
+    background-color: #ff9800;
+    color: white;
+}
+
+#delete:hover {
+    background-color: #ef8c00;
+}
+
+#square-root {
+    font-weight: bold;
+}
+
+#percentage {
+    font-weight: bold;
+} 
